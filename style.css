@@ -1,0 +1,2464 @@
+:root{
+    --grayish-blue:hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    --white:hsl(0, 0%, 100%);
+    --dark-blue:hsl(236, 21%, 26%);
+    --very-dark-blue:hsl(235, 16%, 14%);
+    --dark-black-blue:hsl(234, 17%, 12%);
+}
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+html{
+    height:100%;
+    font-size: calc(1em+1vw);
+}
+body{
+    width:100%;
+    height:100%;
+    font-size: 0.875em;
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: var(--very-dark-blue);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.panel{
+    width:100%;
+    height:470px;
+    background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+    position: relative;
+    z-index: 1;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+.title{
+    margin-top: 9em;
+    margin-bottom: 9em;
+    text-align: center;
+}
+.title h2{
+    color:var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+.days-box{
+    display: block;
+    margin-top:-20px;
+    margin-left: 25%;
+    width:146px;
+    height:70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+.days,
+.days-top{
+    margin:0 auto;
+    width:146px;
+    height:70px;
+    background-color: var(--dark-blue);
+    z-index: 2;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    -moz-box-shadow:    6px 4px 11px 0px rgb(2, 21, 27);
+    box-shadow:         6px 4px 11px 0px rgb(2, 21, 27);
+}
+
+.line-days{
+    width:129px;
+    height:1px;
+    background-color: var( --dark-blue);
+    position: absolute;
+    margin-top:-122px;
+    z-index: 1;
+}
+#daysNum{
+    color:var(--soft-red);
+    font-size:6em;
+    text-align: center;
+    margin-top:-129px;
+     }
+.days-text{
+color:var(--grayish-blue);
+margin-top:50px;
+text-transform: uppercase;
+}
+.hours-box{
+    display: block;
+    margin-left: 39%;
+    margin-top:-68px;
+    width:146px;
+    height:70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hours,
+.hours-top{
+    margin:0 auto;
+    width:146px;
+    height:70px;
+    background-color: var(--dark-blue);
+    z-index: 2;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    -moz-box-shadow:    6px 4px 11px 0px rgb(2, 21, 27);
+    box-shadow:         6px 4px 11px 0px rgb(2, 21, 27);
+
+}
+  #hoursNum{
+    color:var(--soft-red);
+    font-size:6em;
+    text-align: center;
+    margin-top:-128px;
+    
+  }
+
+     .hours-text{
+        color:var(--grayish-blue);
+        margin-top:50px;
+        text-transform: uppercase;
+     }
+     .line-hours{
+        width:129px;
+        height:1px;
+        background-color: var( --dark-blue);
+        position: absolute;
+        margin-top:-122px;
+        z-index: 1; 
+     }
+     .minutes-box{
+        display: block;
+        margin-left: 53%;
+        margin-top:-68px;
+        width:146px;
+        height:70px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .minutes,
+    .minutes-top{
+        margin:0 auto;
+        width:146px;
+        height:70px;
+        background-color: var(--dark-blue);
+        z-index: 2;
+        text-align: center;
+        border-radius: 10px;
+        -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+        -moz-box-shadow:    6px 4px 11px 0px rgb(2, 21, 27);
+        box-shadow:         6px 4px 11px 0px rgb(2, 21, 27);
+    
+    }
+      #minutesNum{
+        color:var(--soft-red);
+        font-size:6em;
+        text-align: center;
+        margin-top:-128px;
+        
+      }
+    
+         .minutes-text{
+            color:var(--grayish-blue);
+            margin-top:50px;
+            text-transform: uppercase;
+         }
+         .line-minutes{
+            width:129px;
+            height:1px;
+            background-color: var( --dark-blue);
+            position: absolute;
+            margin-top:-122px;
+            z-index: 1; 
+         }
+         .seconds-box{
+            display: block;
+            margin-left: 67%;
+            margin-top:-68px;
+            width:146px;
+            height:70px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .seconds,
+        .seconds-top{
+            margin:0 auto;
+            width:146px;
+            height:70px;
+            background: var(--dark-blue);
+             z-index: 2;
+            text-align: center;
+            border-radius: 10px;
+            -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+            -moz-box-shadow:    6px 4px 11px 0px rgb(2, 21, 27);
+            box-shadow:         6px 4px 11px 0px rgb(2, 21, 27);
+        
+        }
+      
+          #secondsNum{
+            color:var(--soft-red);
+            font-size:6em;
+            text-align: center;
+            margin-top:-128px;
+            
+          }
+        
+             .seconds-text{
+                color:var(--grayish-blue);
+                margin-top:50px;
+                text-transform: uppercase;
+             }
+             .line-seconds{
+                width:129px;
+                height:1px;
+                background-color: var( --dark-blue);
+                position: absolute;
+                margin-top:-122px;
+                z-index: 1; 
+             }
+.footer{
+   width:100%;
+   height:170px;
+   background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg"); 
+   z-index: 1;
+   background-repeat:no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.pinterest,
+.instagram,
+.facebook{
+bottom:-100px;
+margin:10px;
+position: relative;
+}
+.pinterest:hover{
+    background-color: var(--soft-red);
+    border-radius: 50%;
+}
+.instagram:hover{
+    background-color: var(--soft-red);
+    border-radius:30px;
+}
+.facebook:hover{
+    background-color: var(--soft-red);
+}
+.attribution {
+    margin-top:110px;
+    font-size: 11px;
+    text-align: center;
+    position:relative;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  @media only screen and (max-width: 1440px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 25%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -129px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 39%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 53%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 67%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 1040px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 15%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -129px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 33%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 50%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 67%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 12%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -129px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 30%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 48%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 66%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 860px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 5%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -129px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 26%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 48%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 70%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 740px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 2%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -129px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 26%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 50%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 74%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 146px;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 6em;
+      text-align: center;
+      margin-top: -128px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -122px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 2%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 75%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -110px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 5em;
+      text-align: center;
+      margin-top: -120px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 25%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 75%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 5em;
+      text-align: center;
+      margin-top: -120px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -110px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 50%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 75%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 5em;
+      text-align: center;
+      margin-top: -120px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -110px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 74%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 75%;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 5em;
+      text-align: center;
+      margin-top: -120px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 129px;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -110px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 0%;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 65%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 25%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 65%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 50%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 65%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 74%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 65%;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 60%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 423px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 1px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 55%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 25%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 55%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 50%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 55%;
+      height: 70px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 74%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 55%;
+      height: 70px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 4em;
+      text-align: center;
+      margin-top: -110px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 60%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -102px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    body {
+      width: 100%;
+      height: 100%;
+      font-size: 0.875em;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--very-dark-blue);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .panel {
+      width: 100%;
+      height: 470px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/bg-stars.svg");
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+    }
+    .title {
+      margin-top: 9em;
+      margin-bottom: 9em;
+      text-align: center;
+    }
+    .title h2 {
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+    }
+    .days-box {
+      display: block;
+      margin-top: -20px;
+      margin-left: 1px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .days,
+    .days-top {
+      margin: 0 auto;
+      width: 45%;
+      height: 60px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    .line-days {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -93px;
+      z-index: 1;
+    }
+    #daysNum {
+      color: var(--soft-red);
+      font-size: 3em;
+      text-align: center;
+      margin-top: -90px;
+    }
+    .days-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .hours-box {
+      display: block;
+      margin-left: 25%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .hours,
+    .hours-top {
+      margin: 0 auto;
+      width: 45%;
+      height: 60px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #hoursNum {
+      color: var(--soft-red);
+      font-size: 3em;
+      text-align: center;
+      margin-top: -90px;
+    }
+  
+    .hours-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-hours {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -92px;
+      z-index: 1;
+    }
+    .minutes-box {
+      display: block;
+      margin-left: 50%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .minutes,
+    .minutes-top {
+      margin: 0 auto;
+      width: 45%;
+      height: 60px;
+      background-color: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+    #minutesNum {
+      color: var(--soft-red);
+      font-size: 3em;
+      text-align: center;
+      margin-top: -90px;
+    }
+  
+    .minutes-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-minutes {
+      width: 30%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -92px;
+      z-index: 1;
+    }
+    .seconds-box {
+      display: block;
+      margin-left: 74%;
+      margin-top: -68px;
+      width: 146px;
+      height: 70px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .seconds,
+    .seconds-top {
+      margin: 0 auto;
+      width: 45%;
+      height: 60px;
+      background: var(--dark-blue);
+      z-index: 2;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      -moz-box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+      box-shadow: 6px 4px 11px 0px rgb(2, 21, 27);
+    }
+  
+    #secondsNum {
+      color: var(--soft-red);
+      font-size: 3em;
+      text-align: center;
+      margin-top: -90px;
+    }
+  
+    .seconds-text {
+      color: var(--grayish-blue);
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+    .line-seconds {
+      width: 60%;
+      height: 1px;
+      background-color: var(--dark-blue);
+      position: absolute;
+      margin-top: -92px;
+      z-index: 1;
+    }
+    .footer {
+      width: 100%;
+      height: 170px;
+      background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/pattern-hills.svg");
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .pinterest,
+    .instagram,
+    .facebook {
+      bottom: -100px;
+      margin: 10px;
+      position: relative;
+    }
+    .pinterest:hover {
+      background-color: var(--soft-red);
+      border-radius: 50%;
+    }
+    .instagram:hover {
+      background-color: var(--soft-red);
+      border-radius: 30px;
+    }
+    .facebook:hover {
+      background-color: var(--soft-red);
+    }
+    .attribution {
+      margin-top: 110px;
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  

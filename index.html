@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Manrope:wght@800&family=Outfit:wght@500&family=Red+Hat+Text:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Launch countdown timer</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="panel">
+    <div class="title">
+      <h2 id="title">We're launching soon</h2>
+    </div>
+    <div class="days-box">
+      <div class="days-top"></div>
+      <div class="days" id="days"></div>
+      <p id="daysNum"></p>
+      <p class="days-text" id="daysText">Days</p>
+      <div class="line-days"></div>
+    </div>
+    <div class="hours-box">
+      <div class="hours-top"></div>
+      <div class="hours" id="hours"></div>
+      <p id="hoursNum"></p>
+      <p class="hours-text" id="hoursText">Hours</p>
+      <div class="line-hours"></div>
+    </div>
+    <div class="minutes-box">
+      <div class="minutes-top"></div>
+      <div class="minutes" id="minutes"></div>
+      <p id="minutesNum"></p>
+      <p class="minutes-text" id="minutesText">Minutes</p>
+      <div class="line-minutes"></div>
+    </div>
+    <div class="seconds-box">
+      <div class="seconds-top"></div>
+      <div class="seconds" id="seconds"></div>
+      <p id="secondsNum"></p>
+      <p class="seconds-text" id="secondsText">Seconds</p>
+      <div class="line-seconds"></div>
+    </div>
 
-  We're launching soon
-
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+  <div class="footer">
+    <img class="facebook"
+      src="https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/icon-facebook.svg"
+      alt="fecebook">
+    <img class="pinterest"
+      src="https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/icon-pinterest.svg"
+      alt="pinterest">
+    <img class="instagram"
+      src="https://raw.githubusercontent.com/zaklinaradivojevic/countdown-timer/7affe4b5b3c6ecdfaed15ab4eca0e425d5a0fe39/images/icon-instagram.svg"
+      alt="instagram">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
